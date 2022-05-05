@@ -60,7 +60,7 @@ Partial Class TrimForm
         Me.DoneButton.Name = "DoneButton"
         Me.DoneButton.Size = New System.Drawing.Size(215, 23)
         Me.DoneButton.TabIndex = 5
-        Me.DoneButton.Text = "Done"
+        Me.DoneButton.Text = "完成"
         Me.DoneButton.UseVisualStyleBackColor = True
         '
         'NumericLeft
@@ -78,7 +78,7 @@ Partial Class TrimForm
         Me.ResetButton.Name = "ResetButton"
         Me.ResetButton.Size = New System.Drawing.Size(100, 23)
         Me.ResetButton.TabIndex = 7
-        Me.ResetButton.Text = "Reset"
+        Me.ResetButton.Text = "重置"
         Me.ResetButton.UseVisualStyleBackColor = True
         '
         'GroupBox1
@@ -93,7 +93,7 @@ Partial Class TrimForm
         Me.GroupBox1.Size = New System.Drawing.Size(215, 75)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Start"
+        Me.GroupBox1.Text = "起始点"
         '
         'Label3
         '
@@ -102,7 +102,7 @@ Partial Class TrimForm
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(47, 13)
         Me.Label3.TabIndex = 9
-        Me.Label3.Text = "Second:"
+        Me.Label3.Text = "秒数:"
         '
         'NumericLeftS
         '
@@ -120,7 +120,7 @@ Partial Class TrimForm
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(45, 13)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "Sample:"
+        Me.Label1.Text = "采样点:"
         '
         'GroupBox2
         '
@@ -134,7 +134,7 @@ Partial Class TrimForm
         Me.GroupBox2.Size = New System.Drawing.Size(215, 75)
         Me.GroupBox2.TabIndex = 9
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "End"
+        Me.GroupBox2.Text = "结束点"
         '
         'Label4
         '
@@ -143,7 +143,7 @@ Partial Class TrimForm
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(47, 13)
         Me.Label4.TabIndex = 10
-        Me.Label4.Text = "Second:"
+        Me.Label4.Text = "秒数:"
         '
         'NumericRightS
         '
@@ -161,7 +161,7 @@ Partial Class TrimForm
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(45, 13)
         Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Sample:"
+        Me.Label2.Text = "采样点:"
         '
         'BackgroundPlayer
         '
@@ -175,7 +175,7 @@ Partial Class TrimForm
         Me.PlayButton.Name = "PlayButton"
         Me.PlayButton.Size = New System.Drawing.Size(100, 23)
         Me.PlayButton.TabIndex = 10
-        Me.PlayButton.Text = "Play"
+        Me.PlayButton.Text = "播放"
         Me.PlayButton.UseVisualStyleBackColor = True
         '
         'AdvWaveViewer1
@@ -213,7 +213,7 @@ Partial Class TrimForm
         Me.ShowIcon = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Trim"
+        Me.Text = "裁剪"
         CType(Me.NumericRight, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericLeft, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)

@@ -74,7 +74,7 @@ Partial Class SettingsForm
         '
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(49, 17)
-        Me.ToolStripStatusLabel1.Text = "Version:"
+        Me.ToolStripStatusLabel1.Text = "版本:"
         '
         'VersionLabel
         '
@@ -87,7 +87,7 @@ Partial Class SettingsForm
         Me.DonateLabel.IsLink = True
         Me.DonateLabel.Name = "DonateLabel"
         Me.DonateLabel.Size = New System.Drawing.Size(199, 17)
-        Me.DonateLabel.Text = "Want to support SLAM by donating?"
+        Me.DonateLabel.Text = "想通过捐款来支持 SLAM 吗?"
         '
         'TabPage2
         '
@@ -100,29 +100,29 @@ Partial Class SettingsForm
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage2.Size = New System.Drawing.Size(276, 305)
         Me.TabPage2.TabIndex = 0
-        Me.TabPage2.Text = "Advanced"
+        Me.TabPage2.Text = "高级"
         Me.TabPage2.UseVisualStyleBackColor = True
         '
         'NAudioRadio
         '
         Me.NAudioRadio.AutoSize = True
-        Me.NAudioRadio.Location = New System.Drawing.Point(125, 166)
+        Me.NAudioRadio.Location = New System.Drawing.Point(124, 165)
         Me.NAudioRadio.Name = "NAudioRadio"
         Me.NAudioRadio.Size = New System.Drawing.Size(126, 17)
         Me.NAudioRadio.TabIndex = 5
         Me.NAudioRadio.TabStop = True
-        Me.NAudioRadio.Text = "Use NAudio (Legacy)"
+        Me.NAudioRadio.Text = "使用 NAudio (过时)"
         Me.NAudioRadio.UseVisualStyleBackColor = True
         '
         'FFMPEGRadio
         '
         Me.FFMPEGRadio.AutoSize = True
-        Me.FFMPEGRadio.Location = New System.Drawing.Point(29, 166)
+        Me.FFMPEGRadio.Location = New System.Drawing.Point(28, 165)
         Me.FFMPEGRadio.Name = "FFMPEGRadio"
         Me.FFMPEGRadio.Size = New System.Drawing.Size(90, 17)
         Me.FFMPEGRadio.TabIndex = 4
         Me.FFMPEGRadio.TabStop = True
-        Me.FFMPEGRadio.Text = "Use FFMPEG"
+        Me.FFMPEGRadio.Text = "使用 FFMPEG"
         Me.FFMPEGRadio.UseVisualStyleBackColor = True
         '
         'OverrideGroup
@@ -139,7 +139,7 @@ Partial Class SettingsForm
         Me.OverrideGroup.Size = New System.Drawing.Size(260, 96)
         Me.OverrideGroup.TabIndex = 3
         Me.OverrideGroup.TabStop = False
-        Me.OverrideGroup.Text = "Override folder detection"
+        Me.OverrideGroup.Text = "自定义目录"
         '
         'Label2
         '
@@ -206,7 +206,7 @@ Partial Class SettingsForm
         Me.EnableOverrideBox.Name = "EnableOverrideBox"
         Me.EnableOverrideBox.Size = New System.Drawing.Size(59, 17)
         Me.EnableOverrideBox.TabIndex = 0
-        Me.EnableOverrideBox.Text = "Enable"
+        Me.EnableOverrideBox.Text = "启用"
         Me.EnableOverrideBox.UseVisualStyleBackColor = True
         '
         'GroupBox3
@@ -217,7 +217,7 @@ Partial Class SettingsForm
         Me.GroupBox3.Size = New System.Drawing.Size(260, 52)
         Me.GroupBox3.TabIndex = 2
         Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "Relay Key"
+        Me.GroupBox3.Text = "转播按键"
         '
         'ChangeRelayButton
         '
@@ -225,7 +225,7 @@ Partial Class SettingsForm
         Me.ChangeRelayButton.Name = "ChangeRelayButton"
         Me.ChangeRelayButton.Size = New System.Drawing.Size(248, 23)
         Me.ChangeRelayButton.TabIndex = 0
-        Me.ChangeRelayButton.Text = "Relay key: """"{0}"""" (change)"
+        Me.ChangeRelayButton.Text = "转播按键: """"{0}"""" (更改)"
         Me.ChangeRelayButton.UseVisualStyleBackColor = True
         '
         'GroupBox2
@@ -243,7 +243,7 @@ Partial Class SettingsForm
         Me.GroupBox2.Size = New System.Drawing.Size(260, 217)
         Me.GroupBox2.TabIndex = 2
         Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Other"
+        Me.GroupBox2.Text = "其他"
         '
         'StartMinimizedCheckBox
         '
@@ -252,7 +252,7 @@ Partial Class SettingsForm
         Me.StartMinimizedCheckBox.Name = "StartMinimizedCheckBox"
         Me.StartMinimizedCheckBox.Size = New System.Drawing.Size(96, 17)
         Me.StartMinimizedCheckBox.TabIndex = 13
-        Me.StartMinimizedCheckBox.Text = "Start minimized"
+        Me.StartMinimizedCheckBox.Text = "启动时最小化"
         Me.StartMinimizedCheckBox.UseVisualStyleBackColor = True
         '
         'MinimizeToSysTrayCheckBox
@@ -262,7 +262,7 @@ Partial Class SettingsForm
         Me.MinimizeToSysTrayCheckBox.Name = "MinimizeToSysTrayCheckBox"
         Me.MinimizeToSysTrayCheckBox.Size = New System.Drawing.Size(133, 17)
         Me.MinimizeToSysTrayCheckBox.TabIndex = 12
-        Me.MinimizeToSysTrayCheckBox.Text = "Minimize to system tray"
+        Me.MinimizeToSysTrayCheckBox.Text = "最小化到系统托盘"
         Me.MinimizeToSysTrayCheckBox.UseVisualStyleBackColor = True
         '
         'HoldToPlay
@@ -272,7 +272,7 @@ Partial Class SettingsForm
         Me.HoldToPlay.Name = "HoldToPlay"
         Me.HoldToPlay.Size = New System.Drawing.Size(82, 17)
         Me.HoldToPlay.TabIndex = 11
-        Me.HoldToPlay.Text = "Hold to play"
+        Me.HoldToPlay.Text = "按住播放键播放"
         Me.HoldToPlay.UseVisualStyleBackColor = True
         '
         'ConTagsCheckBox
@@ -282,7 +282,7 @@ Partial Class SettingsForm
         Me.ConTagsCheckBox.Name = "ConTagsCheckBox"
         Me.ConTagsCheckBox.Size = New System.Drawing.Size(101, 17)
         Me.ConTagsCheckBox.TabIndex = 5
-        Me.ConTagsCheckBox.Text = "Tags in console"
+        Me.ConTagsCheckBox.Text = "在控制台中显示标签"
         Me.ConTagsCheckBox.UseVisualStyleBackColor = True
         '
         'StartEnabledCheckBox
@@ -292,7 +292,7 @@ Partial Class SettingsForm
         Me.StartEnabledCheckBox.Name = "StartEnabledCheckBox"
         Me.StartEnabledCheckBox.Size = New System.Drawing.Size(89, 17)
         Me.StartEnabledCheckBox.TabIndex = 4
-        Me.StartEnabledCheckBox.Text = "Start enabled"
+        Me.StartEnabledCheckBox.Text = "运行软件时自动启动"
         Me.StartEnabledCheckBox.UseVisualStyleBackColor = True
         '
         'LogCheckBox
@@ -302,7 +302,7 @@ Partial Class SettingsForm
         Me.LogCheckBox.Name = "LogCheckBox"
         Me.LogCheckBox.Size = New System.Drawing.Size(73, 17)
         Me.LogCheckBox.TabIndex = 2
-        Me.LogCheckBox.Text = "Log errors"
+        Me.LogCheckBox.Text = "在日志中记录错误"
         Me.LogCheckBox.UseVisualStyleBackColor = True
         '
         'HintCheckBox
@@ -312,7 +312,7 @@ Partial Class SettingsForm
         Me.HintCheckBox.Name = "HintCheckBox"
         Me.HintCheckBox.Size = New System.Drawing.Size(65, 17)
         Me.HintCheckBox.TabIndex = 3
-        Me.HintCheckBox.Text = "No hints"
+        Me.HintCheckBox.Text = "启动后不显示提示"
         Me.HintCheckBox.UseVisualStyleBackColor = True
         '
         'UpdateCheckBox
@@ -322,7 +322,7 @@ Partial Class SettingsForm
         Me.UpdateCheckBox.Name = "UpdateCheckBox"
         Me.UpdateCheckBox.Size = New System.Drawing.Size(113, 17)
         Me.UpdateCheckBox.TabIndex = 2
-        Me.UpdateCheckBox.Text = "Check for updates"
+        Me.UpdateCheckBox.Text = "检查更新"
         Me.UpdateCheckBox.UseVisualStyleBackColor = True
         '
         'TabControl1
@@ -344,7 +344,7 @@ Partial Class SettingsForm
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage1.Size = New System.Drawing.Size(276, 305)
         Me.TabPage1.TabIndex = 1
-        Me.TabPage1.Text = "Misc."
+        Me.TabPage1.Text = "杂项"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
         'SettingsForm
@@ -357,7 +357,7 @@ Partial Class SettingsForm
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "SettingsForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Settings"
+        Me.Text = "设置"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)

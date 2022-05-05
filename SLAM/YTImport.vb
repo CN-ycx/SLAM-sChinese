@@ -16,9 +16,9 @@ Public Class YTImport
             TextBox1.Enabled = False
             ImportButton.Enabled = False
             DownloadWorker.RunWorkerAsync("youtube.com/watch?v=" & youtubeMatch.Groups(1).Value)
-            ToolStripStatusLabel1.Text = "Status: Downloading"
+            ToolStripStatusLabel1.Text = "状态: 下载中"
         Else
-            MessageBox.Show("Invalid YouTube URL.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("无效的 YouTube 链接.", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error)
             TextBox1.Enabled = True
             ImportButton.Enabled = True
         End If
@@ -68,7 +68,7 @@ Public Class YTImport
 
     Private Sub DownloadWorker_RunWorkerCompleted(sender As Object, e As RunWorkerCompletedEventArgs) Handles DownloadWorker.RunWorkerCompleted
         If e.Result.GetType = GetType(Exception) Then
-            MessageBox.Show(e.Result.Message & " See errorlog.txt for more info.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(e.Result.Message & " 查看 errorlog.txt 获取更多信息.", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
             file = e.Result
             DialogResult = Windows.Forms.DialogResult.OK

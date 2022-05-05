@@ -34,7 +34,7 @@ Public Class Form1
         End If
 
         Dim csgo As New SourceGame
-        csgo.name = "Counter-Strike: Global Offensive"
+        csgo.name = "Counter-Strike: Global Offensive (反恐精英: 全球攻势)"
         csgo.id = 730
         csgo.directory = "common\Counter-Strike Global Offensive\"
         csgo.ToCfg = "csgo\cfg\"
@@ -46,7 +46,7 @@ Public Class Form1
         Games.Add(csgo)
 
         Dim css As New SourceGame
-        css.name = "Counter-Strike: Source"
+        css.name = "Counter-Strike: Source (反恐精英: 起源)"
         css.directory = "common\Counter-Strike Source\"
         css.ToCfg = "cstrike\cfg\"
         css.libraryname = "css\"
@@ -54,7 +54,7 @@ Public Class Form1
         Games.Add(css)
 
         Dim tf2 As New SourceGame
-        tf2.name = "Team Fortress 2"
+        tf2.name = "Team Fortress 2 (军团要塞 2)"
         tf2.directory = "common\Team Fortress 2\"
         tf2.ToCfg = "tf\cfg\"
         tf2.libraryname = "tf2\"
@@ -63,21 +63,21 @@ Public Class Form1
         Games.Add(tf2)
 
         Dim gmod As New SourceGame
-        gmod.name = "Garry's Mod"
+        gmod.name = "Garry's Mod (盖瑞模组)"
         gmod.directory = "common\GarrysMod\"
         gmod.ToCfg = "garrysmod\cfg\"
         gmod.libraryname = "gmod\"
         Games.Add(gmod)
 
         Dim hl2dm As New SourceGame
-        hl2dm.name = "Half-Life 2 Deathmatch"
+        hl2dm.name = "Half-Life 2 Deathmatch (半条命 2: 死亡竞赛)"
         hl2dm.directory = "common\half-life 2 deathmatch\"
         hl2dm.ToCfg = "hl2mp\cfg\"
         hl2dm.libraryname = "hl2dm\"
         Games.Add(hl2dm)
 
         Dim l4d As New SourceGame
-        l4d.name = "Left 4 Dead"
+        l4d.name = "Left 4 Dead (求生之路)"
         l4d.directory = "common\Left 4 Dead\"
         l4d.ToCfg = "left4dead\cfg\"
         l4d.libraryname = "l4d\"
@@ -85,7 +85,7 @@ Public Class Form1
         Games.Add(l4d)
 
         Dim l4d2 As New SourceGame
-        l4d2.name = "Left 4 Dead 2"
+        l4d2.name = "Left 4 Dead 2 (求生之路 2)"
         l4d2.directory = "common\Left 4 Dead 2\"
         l4d2.ToCfg = "left4dead2\cfg\"
         l4d2.libraryname = "l4d2\"
@@ -94,7 +94,7 @@ Public Class Form1
         Games.Add(l4d2)
 
         Dim dods As New SourceGame
-        dods.name = "Day of Defeat Source"
+        dods.name = "Day of Defeat Source (胜利之日: 起源)"
         dods.directory = "common\day of defeat source\"
         dods.ToCfg = "dod\cfg\"
         dods.libraryname = "dods\"
@@ -109,7 +109,7 @@ Public Class Form1
         'Games.Add(goldeye)
 
         Dim insurg As New SourceGame
-        insurg.name = "Insurgency"
+        insurg.name = "Insurgency (叛乱)"
         insurg.directory = "common\insurgency2\"
         insurg.ToCfg = "insurgency\cfg\"
         insurg.libraryname = "insurgen\"
@@ -193,7 +193,7 @@ Public Class Form1
             End If
 
         Else
-            MessageBox.Show("You are missing NAudio.dll or NReco.VideoConverter.dll! Cannot import without it!", "Missing File", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("你缺少了 NAudio.dll 或者 NReco.VideoConverter.dll 文件! 没有它就无法进行导入!", "文件丢失", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
@@ -210,7 +210,7 @@ Public Class Form1
             End If
 
         Else
-            MessageBox.Show("You are missing either NAudio.dll, Newtonsoft.Json.dll, NReco.VideoConverter.dll, or YoutubeExtractor.dll! Cannot import from YouTube without them!", "Missing File(s)", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("你缺少了 NAudio.dll, Newtonsoft.Json.dll, NReco.VideoConverter.dll 的其中之一, 或是 YoutubeExtractor.dll 文件! 没有它们就无法进行 YouTube 导入!", "文件丢失", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
@@ -254,7 +254,7 @@ Public Class Form1
 
     Private Sub WavWorker_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles WavWorker.RunWorkerCompleted
         ProgressBar1.Value = 0
-        Dim MsgBoxText As String = "Conversion complete!"
+        Dim MsgBoxText As String = "转换完成!"
         Dim FailedFiles As New List(Of String)
 
         For Each FilePath In e.Result
@@ -262,7 +262,7 @@ Public Class Form1
         Next
 
         If FailedFiles.Count > 0 Then
-            MsgBoxText = MsgBoxText & " However, the following files failed to convert: " & String.Join(", ", FailedFiles)
+            MsgBoxText = MsgBoxText & " 但以下文件未能转换成功: " & String.Join(", ", FailedFiles)
         End If
 
         ReloadTracks(GetCurrentGame)
@@ -312,10 +312,10 @@ Public Class Form1
 
             Dim trimmed As String = ""
             If Track.endpos > 0 Then
-                trimmed = "Yes"
+                trimmed = "是"
             End If
 
-            TrackList.Items.Add(New ListViewItem({"False", Track.name, Track.hotkey, Track.volume & "%", trimmed, """" & String.Join(""", """, Track.tags) & """"}))
+            TrackList.Items.Add(New ListViewItem({"否", Track.name, Track.hotkey, Track.volume & "%", trimmed, """" & String.Join(""", """, Track.tags) & """"}))
         Next
 
 
@@ -333,7 +333,7 @@ Public Class Form1
         Else
             StartPoll()
             If Not My.Settings.NoHint Then
-                If MessageBox.Show("Don't forget to type ""exec slam"" in console! Click ""Cancel"" if you don't ever want to see this message again.", "SLAM", MessageBoxButtons.OKCancel) = Windows.Forms.DialogResult.Cancel Then
+                If MessageBox.Show("别忘了在控制台输入 ""exec slam""! 如果你不想再看到这条消息, 请点击 ""取消"".", "SLAM", MessageBoxButtons.OKCancel) = Windows.Forms.DialogResult.Cancel Then
                     My.Settings.NoHint = True
                     My.Settings.Save()
                 End If
@@ -343,8 +343,8 @@ Public Class Form1
 
     Private Sub StartPoll()
         running = True
-        StartButton.Text = "Stop"
-        SystemTrayMenu_StartStop.Text = "Stop"
+        StartButton.Text = "停止"
+        SystemTrayMenu_StartStop.Text = "停止"
         DisableInterface()
         StartButton.Enabled = True
         TrackList.Enabled = True
@@ -356,8 +356,8 @@ Public Class Form1
 
     Private Sub StopPoll()
         running = False
-        StartButton.Text = "Start"
-        SystemTrayMenu_StartStop.Text = "Start"
+        StartButton.Text = "启动"
+        SystemTrayMenu_StartStop.Text = "启动"
         EnableInterface()
         PollRelayWorker.CancelAsync()
     End Sub
@@ -367,7 +367,7 @@ Public Class Form1
         Dim GameCfgFolder As String = Path.Combine(GameDir, Game.ToCfg)
 
         If Not IO.Directory.Exists(GameCfgFolder) Then
-            Throw New System.Exception("Steamapps folder is incorrect. Disable ""override folder detection"", or select a correct folder.")
+            Throw New System.Exception("Steamapps 目录位置不正确. 请禁用 ""自定义目录设置"", 或者选择正确的目录.")
         End If
 
         'slam.cfg
@@ -393,14 +393,14 @@ Public Class Form1
 
             For Each Track In Game.tracks
                 Dim index As String = Game.tracks.IndexOf(Track)
-                slam_cfg.WriteLine("alias {0} ""bind {1} {0}; slam_updatecfg; echo Loaded: {2}""", index + 1, My.Settings.RelayKey, Track.name)
+                slam_cfg.WriteLine("alias {0} ""bind {1} {0}; slam_updatecfg; echo 已加载: {2}""", index + 1, My.Settings.RelayKey, Track.name)
 
                 For Each TrackTag In Track.tags
-                    slam_cfg.WriteLine("alias {0} ""bind {1} {2}; slam_updatecfg; echo Loaded: {3}""", TrackTag, My.Settings.RelayKey, index + 1, Track.name)
+                    slam_cfg.WriteLine("alias {0} ""bind {1} {2}; slam_updatecfg; echo 已加载: {3}""", TrackTag, My.Settings.RelayKey, index + 1, Track.name)
                 Next
 
                 If Not String.IsNullOrEmpty(Track.hotkey) Then
-                    slam_cfg.WriteLine("bind {0} ""bind {1} {2}; slam_updatecfg; echo Loaded: {3}""", Track.hotkey, My.Settings.RelayKey, index + 1, Track.name)
+                    slam_cfg.WriteLine("bind {0} ""bind {1} {2}; slam_updatecfg; echo 已加载: {3}""", Track.hotkey, My.Settings.RelayKey, index + 1, Track.name)
                 End If
             Next
 
@@ -417,8 +417,8 @@ Public Class Form1
 
         'slam_tracklist.cfg
         Using slam_tracklist_cfg As StreamWriter = New StreamWriter(GameCfgFolder & "slam_tracklist.cfg")
-            slam_tracklist_cfg.WriteLine("echo ""You can select tracks either by typing a tag, or their track number.""")
-            slam_tracklist_cfg.WriteLine("echo ""--------------------Tracks--------------------""")
+            slam_tracklist_cfg.WriteLine("echo ""你可以输入标签或者音轨编号来选择一个音轨.""")
+            slam_tracklist_cfg.WriteLine("echo ""--------------------音轨--------------------""")
             For Each Track In Game.tracks
                 Dim index As String = Game.tracks.IndexOf(Track)
                 If My.Settings.WriteTags Then
@@ -485,13 +485,13 @@ Public Class Form1
 
                     Dim GameCfgFolder As String = Path.Combine(SteamAppsPath, Game.directory, Game.ToCfg)
                     Using slam_curtrack As StreamWriter = New StreamWriter(GameCfgFolder & "slam_curtrack.cfg")
-                        slam_curtrack.WriteLine("echo ""[SLAM] Track name: {0}""", Track.name)
+                        slam_curtrack.WriteLine("echo ""[SLAM] 音轨名称: {0}""", Track.name)
                     End Using
                     Using slam_saycurtrack As StreamWriter = New StreamWriter(GameCfgFolder & "slam_saycurtrack.cfg")
-                        slam_saycurtrack.WriteLine("say ""[SLAM] Track name: {0}""", Track.name)
+                        slam_saycurtrack.WriteLine("say ""[SLAM] 音轨名称: {0}""", Track.name)
                     End Using
                     Using slam_sayteamcurtrack As StreamWriter = New StreamWriter(GameCfgFolder & "slam_sayteamcurtrack.cfg")
-                        slam_sayteamcurtrack.WriteLine("say_team ""[SLAM] Track name: {0}""", Track.name)
+                        slam_sayteamcurtrack.WriteLine("say_team ""[SLAM] 音轨名称: {0}""", Track.name)
                     End Using
 
 
@@ -558,7 +558,7 @@ Public Class Form1
                 If IO.Directory.Exists(My.Settings.userdata) Then
                     UserDataPath = My.Settings.userdata
                 Else
-                    Throw New System.Exception("Userdata folder does not exist. Disable ""override folder detection"", or select a correct folder.")
+                    Throw New System.Exception("Userdata 目录不存在. 请禁用 ""自定义目录设置"", 或者选择正确的目录.")
                 End If
             End If
 
@@ -659,10 +659,10 @@ Public Class Form1
         Select Case e.ProgressPercentage
             Case SEARCHING
                 status = SEARCHING
-                StatusLabel.Text = "Status: Searching..."
+                StatusLabel.Text = "状态: 搜索中..."
             Case WORKING
                 status = WORKING
-                StatusLabel.Text = "Status: Working."
+                StatusLabel.Text = "状态: 工作中"
             Case Else
                 DisplayLoaded(e.ProgressPercentage)
         End Select
@@ -675,11 +675,11 @@ Public Class Form1
         End If
 
         status = IDLE
-        StatusLabel.Text = "Status: Idle."
+        StatusLabel.Text = "状态: 空闲"
         RefreshTrackList()
 
         If Not IsNothing(e.Result) Then 'Result is always an exception
-            MessageBox.Show(e.Result.Message & " See errorlog.txt for more info.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show(e.Result.Message & " 查看 errorlog.txt 获取更多信息.", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
 
         If ClosePending Then
@@ -727,9 +727,9 @@ Public Class Form1
 
     Private Sub DisplayLoaded(ByVal track As Integer)
         For i As Integer = 0 To TrackList.Items.Count - 1
-            TrackList.Items(i).SubItems(0).Text = "False"
+            TrackList.Items(i).SubItems(0).Text = "否"
         Next
-        TrackList.Items(track).SubItems(0).Text = "True"
+        TrackList.Items(track).SubItems(0).Text = "是"
     End Sub
 
     Private Sub LoadTrackKeys(ByVal Game As SourceGame)
@@ -843,7 +843,7 @@ Public Class Form1
             SelectedNames.Add(item.SubItems(1).Text)
         Next
 
-        If MessageBox.Show(String.Format("Are you sure you want to delete {0}?", String.Join(", ", SelectedNames)), "Delete Track?", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
+        If MessageBox.Show(String.Format("你确定要删除 {0} 吗?", String.Join(", ", SelectedNames)), "删除音轨?", MessageBoxButtons.YesNo) = Windows.Forms.DialogResult.Yes Then
 
             For Each item In SelectedNames
                 Dim FilePath As String = Path.Combine(game.libraryname, item & game.FileExtension)
@@ -853,7 +853,7 @@ Public Class Form1
                         File.Delete(FilePath)
                     Catch ex As Exception
                         LogError(ex)
-                        MsgBox(String.Format("Failed to delete {0}.", FilePath))
+                        MsgBox(String.Format("删除 {0} 失败.", FilePath))
                     End Try
                 End If
             Next
@@ -885,7 +885,7 @@ Public Class Form1
                 ReloadTracks(GetCurrentGame)
                 RefreshTrackList()
             Else
-                MessageBox.Show(String.Format("""{0}"" has already been assigned!", SelectKeyDialog.ChosenKey), "Invalid Key")
+                MessageBox.Show(String.Format("""{0}"" 已被分配!", SelectKeyDialog.ChosenKey), "热键无效")
             End If
 
 
@@ -950,7 +950,7 @@ Public Class Form1
             End If
 
         Else
-            MessageBox.Show("You are missing NAudio.dll! Cannot trim without it!", "Missing File", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("你缺少了 NAudio.dll 文件! 没有它就无法进行剪辑!", "文件丢失", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
@@ -974,13 +974,13 @@ Public Class Form1
             Catch ex As Exception
                 Select Case ex.HResult
                     Case -2147024809
-                        MessageBox.Show("""" & RenameDialog.filename & """ contains invalid characters.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        MessageBox.Show("""" & RenameDialog.filename & """ 包含了无效的字符.", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
                     Case -2146232800
-                        MessageBox.Show("A track with that name already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        MessageBox.Show("使用该名称的音轨已存在.", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error)
 
                     Case Else
-                        MessageBox.Show(ex.Message & " See errorlog.txt for more info.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                        MessageBox.Show(ex.Message & " 查看 errorlog.txt 获取更多信息.", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End Select
 
             End Try
@@ -1007,7 +1007,7 @@ Public Class Form1
         Dim UpdateURL As String = UpdateText.Split()(1)
         If Version.TryParse(UpdateText.Split()(0), NewVersion) Then
             If My.Application.Info.Version.CompareTo(NewVersion) < 0 Then
-                If MessageBox.Show(String.Format("An update ({0}) is available! Click ""OK"" to be taken to the download page.", NewVersion.ToString), "SLAM Update", MessageBoxButtons.OKCancel) = Windows.Forms.DialogResult.OK Then
+                If MessageBox.Show(String.Format("更新 ({0}) 可用! 点击 ""确定"" 打开下载页面.", NewVersion.ToString), "SLAM 更新", MessageBoxButtons.OKCancel) = Windows.Forms.DialogResult.OK Then
                     Process.Start(UpdateURL)
                 End If
             End If
@@ -1022,13 +1022,13 @@ Public Class Form1
                 My.Settings.Save()
                 RefreshPlayKey()
             Else
-                MessageBox.Show("Play key and relay key can not be the same!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("请选择不同的播放按键与转播按键!", "错误", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
     End Sub
 
     Private Sub RefreshPlayKey()
-        PlayKeyButton.Text = String.Format("Play key: ""{0}"" (change)", My.Settings.PlayKey)
+        PlayKeyButton.Text = String.Format("播放按键: ""{0}"" (更改)", My.Settings.PlayKey)
     End Sub
 
     Public Sub LogError(ByVal ex As Exception)
@@ -1089,7 +1089,7 @@ Public Class Form1
                 SystemTrayIcon.Visible = True
                 SystemTrayIcon.BalloonTipIcon = ToolTipIcon.Info
                 SystemTrayIcon.BalloonTipTitle = "SLAM"
-                SystemTrayIcon.BalloonTipText = "Minimized to tray"
+                SystemTrayIcon.BalloonTipText = "已最小化到托盘"
                 SystemTrayIcon.ShowBalloonTip(50000)
                 Hide()
                 ShowInTaskbar = False

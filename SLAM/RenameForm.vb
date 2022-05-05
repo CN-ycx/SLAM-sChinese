@@ -4,7 +4,7 @@
 
     Private Sub DoneButton_Click(sender As Object, e As EventArgs) Handles DoneButton.Click
         If String.IsNullOrWhiteSpace(NameBox.Text) Then
-            MessageBox.Show("The name can not be empty.", "Naming Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("名称不能为空.", "命名错误", MessageBoxButtons.OK, MessageBoxIcon.Error)
         Else
             filename = NameBox.Text
             DialogResult = Windows.Forms.DialogResult.OK

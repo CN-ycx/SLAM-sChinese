@@ -34,7 +34,7 @@ Partial Class SetVolume
         Me.SelectButton.Name = "SelectButton"
         Me.SelectButton.Size = New System.Drawing.Size(100, 23)
         Me.SelectButton.TabIndex = 1
-        Me.SelectButton.Text = "Done"
+        Me.SelectButton.Text = "完成"
         Me.SelectButton.UseVisualStyleBackColor = True
         '
         'VolumeBar
@@ -68,7 +68,7 @@ Partial Class SetVolume
         Me.MinimizeBox = False
         Me.Name = "SetVolume"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Volume"
+        Me.Text = "音量"
         CType(Me.VolumeBar, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

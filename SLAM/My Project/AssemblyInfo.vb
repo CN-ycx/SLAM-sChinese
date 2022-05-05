@@ -1,4 +1,5 @@
-﻿Imports System
+﻿Imports System.Resources
+Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
 
@@ -8,12 +9,12 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("SLAM")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyTitle("SLAM")>
+<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("SLAM")>
-<Assembly: AssemblyCopyright("Copyright ©  2017")>
-<Assembly: AssemblyTrademark("")> 
+<Assembly: AssemblyCopyright("Copyright ©  2017 & Copyright (C) 2013-2022 ycx Studios")>
+<Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
@@ -33,3 +34,4 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyVersion("1.5.4.0")>
 <Assembly: AssemblyFileVersion("1.5.4.0")>
+<Assembly: NeutralResourcesLanguage("zh-CN")>

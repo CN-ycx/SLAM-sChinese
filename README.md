@@ -1,24 +1,24 @@
-# SLAM
+# SLAM 简体中文版
 
-[Source Live Audio Mixer home page](http://slam.flankers.net/)
+[Source Live Audio Mixer 首页 (英文版)](http://slam.flankers.net/)
 
 [Twitter](https://twitter.com/SilentFL)
 
 [Reddit](https://www.reddit.com/r/SourceLiveAudioMixer/)
 
-SLAM is a new way to share sounds with your friends over the built in communication system of Source games. With SLAM's super-simple design, you will be pleasing the ears of your audience in no time! 
+SLAM 是一种通过起源引擎游戏内置的通讯系统与朋友分享音频的新方式. 依靠 SLAM 的极简设计, 仅需超短时间即可取悦听众! 
 
-Current features:
-- Simple in-game interface.
-- Select tracks either by their track number, or tags.
-- Import multiple media files at once with the click of a button (.mp3, .wav, .aac, .wma, .m4a, .mp4, .wmv, .avi, .m4v, and .mov file types).
-- Import tracks by YouTube URL.
-- Support for multiple games, such as: Counter-Strike: Global Offensive (CS:GO), Counter-Strike: Source (CS:S), and Team Fortress 2 (TF2)
-- Create binds to load specific songs.
-- Change track volume on the go.
-- Trim tracks on the go.
+目前的功能:
+- 简单的游戏内界面.
+- 按照音轨或者标签选择音轨.
+- 只需点击一次按钮即可导入多个媒体文件 (.mp3, .wav, .aac, .wma, .m4a, .mp4, .wmv, .avi, .m4v 与 .mov 文件类型).
+- 从 YouTube 链接导入音轨.
+- 支持多种游戏, 例如: Counter-Strike: Global Offensive (反恐精英: 全球攻势), Counter-Strike: Source (反恐精英: 起源) 与 Team Fortress 2 (军团要塞 2)
+- 支持绑定热键加载特定歌曲.
+- 支持播放时更改音轨音量.
+- 支持播放时裁剪音轨.
 
 
-![1](http://i.imgur.com/szN7Y5z.png)
-![2](http://i.imgur.com/vfWozNU.png)
-![3](http://i.imgur.com/HB2qAEh.png)
+![1](Screenshot/screenshot-1.png)
+![2](Screenshot/screenshot-2.png)
+![3](Screenshot/screenshot-3.png)

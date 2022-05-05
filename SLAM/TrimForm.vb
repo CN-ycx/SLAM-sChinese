@@ -102,12 +102,12 @@ Public Class TrimForm
     Private Sub PlayButton_Click(sender As Object, e As EventArgs) Handles PlayButton.Click
         If BackgroundPlayer.IsBusy = False Then
             BackgroundPlayer.RunWorkerAsync(New Object(2) {AdvWaveViewer1.WaveStream, AdvWaveViewer1.leftpos, AdvWaveViewer1.rightpos})
-            PlayButton.Text = "Stop"
+            PlayButton.Text = "停止"
             DisableInterface()
             PlayButton.Enabled = True
         Else
             BackgroundPlayer.CancelAsync()
-            PlayButton.Text = "Play"
+            PlayButton.Text = "播放"
         End If
     End Sub
 
@@ -139,7 +139,7 @@ Public Class TrimForm
     End Sub
 
     Private Sub BackgroundPlayer_RunWorkerCompleted(sender As Object, e As System.ComponentModel.RunWorkerCompletedEventArgs) Handles BackgroundPlayer.RunWorkerCompleted
-        PlayButton.Text = "Play"
+        PlayButton.Text = "播放"
         AdvWaveViewer1.marker = 0
         EnableInterface()
     End Sub

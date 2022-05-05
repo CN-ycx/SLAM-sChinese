@@ -38,7 +38,7 @@ Partial Class YTImport
         Me.ImportButton.Name = "ImportButton"
         Me.ImportButton.Size = New System.Drawing.Size(75, 23)
         Me.ImportButton.TabIndex = 0
-        Me.ImportButton.Text = "Import"
+        Me.ImportButton.Text = "导入"
         Me.ImportButton.UseVisualStyleBackColor = True
         '
         'TextBox1
@@ -64,7 +64,7 @@ Partial Class YTImport
         Me.ToolStripStatusLabel1.Name = "ToolStripStatusLabel1"
         Me.ToolStripStatusLabel1.Size = New System.Drawing.Size(117, 17)
         Me.ToolStripStatusLabel1.Spring = True
-        Me.ToolStripStatusLabel1.Text = "Status: Idle"
+        Me.ToolStripStatusLabel1.Text = "状态: 空闲"
         Me.ToolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'ToolStripProgressBar1
@@ -78,7 +78,7 @@ Partial Class YTImport
         Me.DonateLabel.IsLink = True
         Me.DonateLabel.Name = "DonateLabel"
         Me.DonateLabel.Size = New System.Drawing.Size(199, 17)
-        Me.DonateLabel.Text = "Want to support SLAM by donating?"
+        Me.DonateLabel.Text = "想通过捐款来支持 SLAM 吗?"
         '
         'DownloadWorker
         '
@@ -96,7 +96,7 @@ Partial Class YTImport
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "YTImport"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "YouTube Import"
+        Me.Text = "从 YouTube 导入"
         Me.StatusStrip1.ResumeLayout(False)
         Me.StatusStrip1.PerformLayout()
         Me.ResumeLayout(False)
